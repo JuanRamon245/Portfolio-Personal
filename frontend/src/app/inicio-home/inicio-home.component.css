@@ -1,0 +1,112 @@
+.perfilContenedor {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  width: max-content;
+
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Cabecera */
+
+.filaSuperior {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-right: 0.6rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.fotoPerfil {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  min-width: 120px;
+  margin-right: 6rem;
+}
+
+.fotoPerfil img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0.3rem solid rgb(255, 255, 255);
+  box-shadow:  
+    0.4rem 0.4rem 0 rgb(69, 196, 49),
+    0rem 0rem  0 #30f37e,
+    0rem  0rem  0 #30f37e,
+    0rem  0rem  0 #30f37e;
+}
+
+.nombre {
+  color: white;
+  font-family: 'Alfa Slab One', sans-serif;
+  font-size: 3.2rem;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  text-shadow:
+    0.3rem  0.3rem 0 rgb(69, 196, 49),
+    0rem 0rem 0 #30f37e,
+    0rem 0rem 0 #30f37e,
+    0rem 0rem 0 #30f37e;
+}
+
+.descripcionPerfil {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  gap: 1rem;
+  margin-left: 5.5rem;
+}
+
+.textoBlanco {
+  color: white;
+  margin: 0;
+  line-height: 1.6;
+  margin-block: 1lh;
+}
+
+/* Primera linea de texto */
+
+.descripcionCorta {
+  font-size: 1.6rem;
+  font-family: 'Ubuntu', sans-serif;
+  text-shadow:
+    0 0.1rem 0.2rem rgb(54, 151, 39),
+    0 0 0.3rem rgb(69, 196, 49);
+  -webkit-text-stroke: 0.07rem black;
+   margin-left: 11rem;
+   margin-top: 0.5rem;
+   padding-bottom: 0.5rem;
+}
+
+.colorContrarioDescripciones {
+  color: rgb(51, 194, 29);
+  text-shadow:
+    0 0rem 0rem #7e7e7e,
+    0 0 0rem rgb(192, 192, 192);
+  
+}
+
+/* Segunda linea de texto */
+
+.descripcionLarga {
+  background: rgba(22, 24, 26);
+  backdrop-filter: blur(10px);
+  border-radius: 2rem;
+  padding: 2rem;
+  height: 16rem;
+  width: 50rem;
+  max-height: 400px;
+  max-width: 1300px;
+  margin: 0 auto;
+  border: 0.1rem solid rgba(68, 214, 44, 0.2);
+  box-shadow: 0.6rem 0.6rem 0 rgb(69, 196, 49);
+
+  font-size: 1.2rem;
+  margin-top: 4.5rem;
+  margin-right: 14rem;
+  font-family: 'Ubuntu', sans-serif;
+}

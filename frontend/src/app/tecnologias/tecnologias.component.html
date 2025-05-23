@@ -1,0 +1,158 @@
+<div class="tecnologiasContenedor">
+  <div class="titular">
+    <span class="tituloPagina">Tecnologías</span>
+  </div>
+  <div class="tecnologias">
+
+    <div class="card">
+      <span class="tipoDesarrollo">Frontend Web</span>
+      <div class="desarrollos">
+        <div
+          class="logoContenedor"
+          *ngFor="let tecnologia of frontendWeb"
+        >
+          <img
+            [src]="tecnologia.logo"
+            [alt]="tecnologia.nombre"
+            class="logoTecnologia"
+          />
+          <div class="panelNivel">
+            <span
+              *ngFor="let punto of [1,2,3]"
+              [ngClass]="{
+                'puntoVerde': punto <= tecnologia.nivelConocimientos,
+                'puntoNegro': punto > tecnologia.nivelConocimientos
+              }"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="tipoDesarrollo">Backend Web</span>
+      <div class="desarrollos">
+      <div
+      class="logoContenedor"
+      *ngFor="let tecnologia of backendWeb"
+        >
+          <img
+            [src]="tecnologia.logo"
+            [alt]="tecnologia.nombre"
+            class="logoTecnologia"
+          />
+          <div class="panelNivel">
+            <span
+              *ngFor="let punto of [1,2,3]"
+              [ngClass]="{
+                'puntoVerde': punto <= tecnologia.nivelConocimientos,
+                'puntoNegro': punto > tecnologia.nivelConocimientos
+              }"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="tipoDesarrollo">Desarrollo Móvil</span>
+      <div class="desarrollos">
+        <div
+      class="logoContenedor"
+      *ngFor="let tecnologia of desarrolloMovil"
+        >
+          <img
+            [src]="tecnologia.logo"
+            [alt]="tecnologia.nombre"
+            class="logoTecnologia"
+          />
+          <div class="panelNivel">
+            <span
+              *ngFor="let punto of [1,2,3]"
+              [ngClass]="{
+                'puntoVerde': punto <= tecnologia.nivelConocimientos,
+                'puntoNegro': punto > tecnologia.nivelConocimientos
+              }"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="tipoDesarrollo">Desarrollo de Escritorio</span>
+      <div class="desarrollos">
+        <div
+      class="logoContenedor"
+      *ngFor="let tecnologia of desarrolloEscritorio"
+        >
+          <img
+            [src]="tecnologia.logo"
+            [alt]="tecnologia.nombre"
+            class="logoTecnologia"
+          />
+          <div class="panelNivel">
+            <span
+              *ngFor="let punto of [1,2,3]"
+              [ngClass]="{
+                'puntoVerde': punto <= tecnologia.nivelConocimientos,
+                'puntoNegro': punto > tecnologia.nivelConocimientos
+              }"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="tipoDesarrollo">Herramientas</span>
+      <div class="desarrollos">
+        <div
+      class="logoContenedor"
+      *ngFor="let tecnologia of herramientas"
+        >
+          <img
+            [src]="tecnologia.logo"
+            [alt]="tecnologia.nombre"
+            class="logoTecnologia"
+          />
+          <div class="panelNivel">
+            <span
+              *ngFor="let punto of [1,2,3]"
+              [ngClass]="{
+                'puntoVerde': punto <= tecnologia.nivelConocimientos,
+                'puntoNegro': punto > tecnologia.nivelConocimientos
+              }"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="tipoDesarrollo">IDEs</span>
+      <div class="desarrollos">
+        <div
+      class="logoContenedor"
+      *ngFor="let tecnologia of IDEs"
+        >
+          <img
+            [src]="tecnologia.logo"
+            [alt]="tecnologia.nombre"
+            class="logoTecnologia"
+          />
+          <div class="panelNivel">
+            <span
+              *ngFor="let punto of [1,2,3]"
+              [ngClass]="{
+                'puntoVerde': punto <= tecnologia.nivelConocimientos,
+                'puntoNegro': punto > tecnologia.nivelConocimientos
+              }"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,150 @@
+.lineaTemporalContenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+/* Cabecera */
+
+.titular {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.tituloPagina {
+  color: white;
+  font-family: 'Alfa Slab One', sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: 0.2rem;
+  margin-left: 18rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-shadow:
+    0.4rem 0.4rem 0 rgb(69, 196, 49),
+    0rem 0rem 0 #30f37e,
+    0rem 0rem 0 #30f37e,
+    0rem 0rem 0 #30f37e;
+}
+
+/* Linea temporal */
+
+.lineaTemporal {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+}
+
+.columnaTimeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Dibujo de la linea temporal */
+
+.circulo {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: radial-gradient(circle, transparent 10%, rgb(15 15 15)10%, rgb(15 15 15)15%, #28a745 16%, #28a745 50%, rgb(15 15 15) 51%, rgb(15 15 15) 90%);
+}
+
+.circulo.secundario {
+    margin-top: -1rem;
+}
+
+.rectangulo {
+    width: 1.3rem;
+    height: 25rem;
+    margin-top: -1.3rem;
+    z-index: -1;
+    background-color: #28a745;
+}
+
+.rectangulo.final {
+  background:
+    linear-gradient(to bottom, #28a745 0%, #28a745 20%, transparent 100%),
+    repeating-linear-gradient(
+      to bottom,
+      #28a745,
+      #28a745 1rem,
+      transparent 1rem,
+      transparent 2rem
+    );
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+/* Columnas de texto para la información */
+
+.columnaTexto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 2.5rem;
+  margin-block: 1lh;
+}
+
+.columnaTexto.izquierda {
+  align-items: flex-end;
+}
+
+/* Diferentes textos que van a haber en la linea temporal */
+
+.textoTrayectorias {
+  background: rgba(22, 24, 26);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  color: white;
+  padding: 2rem;
+  border: 0.1rem solid rgba(68, 214, 44, 0.2);
+  box-shadow: 0.4rem 0.4rem 0 rgb(69, 196, 49);
+  font-size: 1.1rem;
+}
+
+.resaltarLetras {
+  color: rgb(51, 194, 29);
+}
+
+.textoTrayectorias.titulo {
+  width: fit-content;
+  height: 5rem;
+  letter-spacing: 0.1rem;
+  font-family: 'Alfa Slab One', sans-serif;
+}
+
+.textoTrayectorias.explicacion {
+  width: 38rem;
+  height: 13.3rem;
+  padding: 1.5rem;
+  padding-top: 1rem;
+  font-size: 1.1rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.textoTrayectorias.fecha {
+  width: fit-content;
+  height: 5rem;
+  font-family: 'Alfa Slab One', sans-serif;
+}
+
+/* Margenes para que se cuide un espaciado limpio */
+
+.margenImaginario {
+  background: transparent;
+  width: 38rem;
+  height: 16.4rem;
+}
+
+.margenImaginario.fecha {
+  height: 3rem;
+}
