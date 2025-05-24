@@ -1,0 +1,142 @@
+.tecnologiasContenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+/* Cabecera */
+
+.titular {
+  display: flex;
+  justify-content: center;
+}
+
+.tituloPagina {
+  color: white;
+  font-family: 'Alfa Slab One', sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: 0.2rem;
+
+  text-shadow: 0.4rem 0.4rem 0 rgb(69, 196, 49), 0 0 0 #30f37e;
+}
+
+/* Espacio para las tecnologias */
+
+.tecnologias {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  column-gap: 10rem;
+  justify-items: center;
+  align-items: start;
+
+  position: relative;
+  overflow: visible;
+
+}
+
+/* Tarjeta para las tecnologias */
+
+.card {
+  width: 32rem;
+  height: 32rem;
+  background: rgba(22, 24, 26);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  color: white;
+  padding: 2rem;
+  border: 0.1rem solid rgba(68, 214, 44, 0.2);
+  box-shadow: 0.6rem 0.6rem 0 rgba(69, 196, 49);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+
+  margin-bottom: 1rem;
+}
+
+.tipoDesarrollo {
+  display: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Contenedor para cada tecnologia */
+
+.desarrollos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+/* Tecnologias usadas en cada apartado */
+
+.logoContenedor {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoTecnologia {
+  padding: 0.5rem;
+  width: 6rem;
+  height: 6rem;
+  object-fit: contain;
+  border-radius: 30%;
+  background-color: rgba(255, 255, 255);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.logoTecnologia:hover {
+  transform: scale(1.2);
+}
+
+/* Panel oculto de nivel de conocimiento */
+.panelNivel {
+  position: absolute;
+  z-index: 2000;
+  top: 50%;
+  left: 110%;
+  transform: translateY(-50%) scaleX(0);
+  transform-origin: left;
+  width: 10rem;
+  height: 6rem;
+  background: rgba(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  border-radius: 1rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.logoContenedor:hover .panelNivel {
+  transform: translateY(-50%) scaleX(1);
+  opacity: 1;
+}
+
+/* Marcadores de nivel de conocimiento */
+.puntoVerde,
+.puntoNegro {
+  width: 1.8rem;
+  height: 3rem;
+  border-radius: 20%;
+}
+
+.puntoVerde {
+  background-color: rgba(69, 196, 49);
+}
+
+.puntoNegro {
+  background-color: rgba(22, 24, 26);
+}
