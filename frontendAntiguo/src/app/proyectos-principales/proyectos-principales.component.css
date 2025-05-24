@@ -1,0 +1,195 @@
+.proyectosPrincipalesContenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+/* Cabecera */
+
+.titular {
+  display: flex;
+  justify-content: center;
+}
+
+.tituloPagina {
+  color: white;
+  font-family: 'Alfa Slab One', sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: 0.2rem;
+  margin-left: 10rem;
+  text-shadow: 0.4rem 0.4rem 0 rgb(69, 196, 49), 0 0 0 #30f37e;
+}
+
+/* carrusel de los proyectos */
+
+.carrusel {
+  width: 62.5rem;
+  height: 46.5rem;
+  margin: 0 auto;
+  position: relative;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ngb-carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Contenido interno del slide */
+.ngb-carousel .carousel-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+/* Flechas del carrusel */
+.ngb-carousel .carousel-control-prev,
+.ngb-carousel .carousel-control-next {
+  
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.ngb-carousel .carousel-control-prev {
+  left: -5rem;
+}
+
+.ngb-carousel .carousel-control-next {
+  right: -5rem;
+}
+
+/* Indicacion de en que card estamos */
+.ngb-carousel .carousel-indicators {
+  bottom: -5rem;
+}
+
+.ngb-carousel .carousel-indicators [data-bs-target] {
+  background-color: #44d62c;
+}
+
+/* Tarjeta */
+.card {
+  width: 37rem;
+  height: 42rem;
+  background: rgba(22, 24, 26);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  color: white;
+  padding: 2rem;
+  border: 0.1rem solid rgba(68, 214, 44, 0.2);
+  box-shadow: 0.6rem 0.6rem 0 rgba(69, 196, 49);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  margin-bottom: 25px;
+  margin-left: 200px;
+}
+
+/* Titulo de la tarjeta y boton para github del proyecto */
+
+.titular {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.titulo {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5rem;
+  height: 3rem;
+  font-weight: bold;
+}
+
+.botonEnlaceGithub {
+  background-color: #30f37e;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 20%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+/* Descripcion del proyecto */
+
+.descripcion {
+  background-color: #30f37e;
+  padding: 1rem;
+  padding-top: 0.7rem;
+  border-radius: 0.5rem;
+  text-align: left;
+  width: 100%;
+  height: 22rem;
+}
+
+.texto {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+}
+
+/*Imagen del proyecto */
+
+.imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.imagen img {
+  width: 100%;
+  height: 20rem;
+  border-radius: 1rem;
+  border: 0.3rem solid white;
+  padding: 2rem;
+  background: rgb(232, 236, 241);
+  backdrop-filter: blur(2rem);
+  object-fit: contain;
+}
+
+/* Tecnologias usadas en el proyecto */
+
+.tecnologias {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.3rem;
+}
+
+.tecnologias img {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.tecnologias img:hover {
+  transform: scale(1.2);
+}
