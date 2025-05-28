@@ -15,7 +15,7 @@ export class ProyectosPrincipalesComponent {
       nombre: 'Aplicacion de gestion de restaurantes', 
       descripcion: 'Aplicacion movil, diseñada para la gestion interna de un local, como puede ser un bar o restaurante, para que se tenga una gestión virtual de las comandas entre los trabajadores.', 
       img: 'undraw_mobile-application_uc2q.svg',
-      enlace: 'https://github.com/JuanRamon245',
+      enlace: 'https://github.com/JuanRamon245/Cocinegocios',
       tecnologias: [
         { 
           nombre: 'Firebase', 
