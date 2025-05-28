@@ -9,7 +9,9 @@
         <div class="card">
            <div class="titular">
             <span class="titulo">{{ recurso.nombre }}</span>
-            <button class="botonEnlaceGithub"><i class="fab fa-github"></i></button>
+            <a [href]="recurso.enlace" target="_blank" class="botonEnlaceGithub">
+              <i class="fab fa-github"></i>
+            </a>
           </div>
 
           <div class="descripcion">

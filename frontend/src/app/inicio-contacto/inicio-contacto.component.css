@@ -67,14 +67,23 @@
   box-shadow: 0.6rem 0.6rem 0 rgb(13, 13, 15);
 }
 
-/* iconos para descaarga, copiar y enviar */
+/* iconos para descarga, copiar y enviar */
 
 .material-symbols-outlined {
-    font-size: 2rem;
+    font-size: 1.7rem;
+}
+
+.informacionContenedor.simbolos {
+    cursor: pointer;
+}
+
+.informacionContenedor.simbolos a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .informacionContenedor.simbolos:hover {
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   background-color: #fff;
   color: #000;
 }
@@ -95,6 +104,7 @@
   font-size: 1.2rem;
   letter-spacing: 0.2rem;
   padding: 1rem 1.5rem;
+  text-decoration: none;
 }
 
 .contenedorEnlaces a {
@@ -105,7 +115,7 @@
 
 .contenedorEnlaces.linkedin {
   border-color: #0077b5;
-  color: #0077b5;
+  color: white;
 }
 
 .contenedorEnlaces.linkedin i {
@@ -115,7 +125,7 @@
 
 .contenedorEnlaces.github {
   border-color: #6e5494;
-  color: #6e5494;
+  color: white;
 }
 
 .contenedorEnlaces.github i {
@@ -123,6 +133,24 @@
   color: #6e5494;
 }
 
-.contenedorEnlaces a:hover {
-  text-decoration: underline;
+.contenedorEnlaces.github:hover {
+  border-color: white;
+  background: #6e5494;
+  transition: all 0.5s ease;
+}
+
+.contenedorEnlaces.github:hover i {
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.contenedorEnlaces.linkedin:hover {
+  border-color: white;
+  background: #0077b5;
+  transition: all 0.5s ease;
+}
+
+.contenedorEnlaces.linkedin:hover i {
+  color: white;
+  transition: all 0.5s ease;
 }
