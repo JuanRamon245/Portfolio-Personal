@@ -27,16 +27,16 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   z-index: -1;
   background: conic-gradient(
     from 180deg at 50% 70%,
     hsla(0,0%,98%,1) 0deg,
-    rgb(51, 194, 29)72deg,
+    rgb(51, 194, 29) 72deg,
     rgb(51, 194, 29) 144deg,
-    rgb(51, 194, 29)216deg,
-    rgb(51, 194, 29)288deg,
+    rgb(51, 194, 29) 216deg,
+    rgb(51, 194, 29) 288deg,
     hsla(0,0%,98%,1) 1turn
   );
   mask:
