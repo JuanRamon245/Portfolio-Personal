@@ -8,11 +8,6 @@ html.lenis {
   scroll-behavior: auto !important;
 }
 
-@font-face {
-  font-family: "Geist";
-  src: url("https://assets.codepen.io/605876/GeistVF.ttf") format("truetype");
-}
-
 * {
   box-sizing: border-box;
 }
@@ -46,7 +41,7 @@ body {
   );
   mask:
     radial-gradient(circle at 50% 50%, white 2px, transparent 2.5px) 50% 50% / var(--size) var(--size),
-    url("https://assets.codepen.io/605876/noise-mask.png") 256px 50% / 256px 256px;
+    url("assets/aset.webp") 256px 50% / 256px 256px;
   mask-composite: intersect;
   animation: flicker 20s infinite linear;
   pointer-events: none;
